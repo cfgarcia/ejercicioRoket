@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" ng-class="{'col-xs-6':menuItem}">
+      <div class="list-group">
+        <button type="button"  ng-repeat="articulo in articulos" class="list-group-item" ng-class="{active : menuItem === articulo}" ng-click="setItem(articulo)">{{articulo.nombre}}</button>
+      </div>
+    </div>
+    <div ng-show="menuItem" class="col-xs-6">
+      <div class="panel panel-primary" >
+        <div class="panel-heading" ng-click="menuItem=false">
+          Detalles
+          <button class="btn btn-default btn-sm pull-right" ><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <div class="panel-body" ng-show="detalles" >{{detalles}}</div>
+        <div class="panel-body" ng-show="url" ><img class="img-responsive" ng-src="/archivos/{{url}}"></img></div>
+      </div>
+    </div>
+  </div>
+</div>

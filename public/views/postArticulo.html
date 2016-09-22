@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row" ng-init="subir=false">
+    <div class=" text-center">
+          <button class="btn btn-default btn-md" ng-class="{active : !subir}" ng-click="subir=false">Texto</button>
+          <button class="btn btn-default btn-md" ng-class="{active : subir}" ng-click="subir=true">Imagen</button>
+    </div>
+    <form ng-submit="guardar()">
+      <div class="form-group">
+        <label for="nomArticulo">Nombre</label>
+        <input type="text" required maxlength="150" ng-model="nombre" class="form-control" id="nomArticulo" placeholder="Nombre del articulo"/>
+      </div>
+      <div class="form-group" ng-hide="subir">
+        <label for="nomArticulo">Descripci&oacute;n</label>
+        <textarea type="text" ng-required="!subir" required maxlength="500" ng-model="descripcion" placeholder="Description del articulo" class="form-control" id="desArticulo" rows="6"/>
+      </div>
+      <div class="form-group" ng-show="subir">
+        <input type="file" ng-required="subir" id="fileInput" ng-hide="conArchivo" nv-file-select uploader="uploader"/><br/>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-success pull-right" value="Guardar" />
+      </div>
+    </form>
+  </div>
+</div>

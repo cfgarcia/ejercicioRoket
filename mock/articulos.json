@@ -1,0 +1,29 @@
+[{
+    "_id": {
+        "$oid": "57e1bfb0dcba0f1bc33bcd3d"
+    },
+    "nombre": "audifonos",
+    "detalles": "Los auriculares (también conocidos como audífonos o cascos ) son transductores que reciben una señal eléctrica originada desde una fuente electrónica"
+},
+{
+    "_id": {
+        "$oid": "57e1c00adcba0f1bc33bcd51"
+    },
+    "nombre": "micrófono",
+    "detalles": "Básicamente, un micrófono (del inglés microphone, acuñado en el siglo XVII a partir del prefijo micro, 'pequeño' y el griego antiguo ϕωνή - foné, 'voz'"
+},
+{
+    "_id": {
+        "$oid": "57e1c068dcba0f1bc33bcd61"
+    },
+    "nombre": "Teclado",
+    "detalles": "En informática, un teclado es un dispositivo o periférico de entrada, en parte inspirado en el teclado de las máquinas de escribir, que utiliza una disposición"
+},
+{
+    "_id": {
+        "$oid": "57e1c0a0dcba0f1bc33bcd70"
+    },
+    "nombre": "celular",
+    "detalles": "El término celular puede referirse a los siguientes artículos: celular, lo relativo a la célula (unidad estructural y funcional principal de los seres vivos)"
+}
+]
